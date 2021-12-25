@@ -397,6 +397,10 @@ ul {
   clip: react(0 0 0 0);
   overflow: hidden;
 }
+.policy-checkbox:hover + .policy-box::before,
+.policy-checkbox:focus + .policy-box::before {
+  border: 2px solid var(--accent-text-color);
+}
 
 .policy-checkbox:checked + .policy-box::before {
   background-color: var(--accent-text-color);
@@ -405,10 +409,6 @@ ul {
   background-position: center;
   background-size: cover;
   border: transparent;
-}
-.policy-checkbox:hover + .policy-box::before,
-.policy-checkbox:focus + .policy-box::before {
-  border: 2px solid var(--accent-text-color);
 }
 
 .policy-box::before {
