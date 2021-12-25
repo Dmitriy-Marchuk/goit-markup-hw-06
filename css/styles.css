@@ -854,6 +854,7 @@ ul {
 .subscribe-box input:focus,
 .subscribe-box input:hover {
   border: 1px solid #2196f3;
+  color: #fff;
 }
 
 input:hover::placeholder {
