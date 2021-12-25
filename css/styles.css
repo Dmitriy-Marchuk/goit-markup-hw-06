@@ -403,7 +403,8 @@ ul {
   background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  border: transparent;
 }
 .policy-checkbox:hover + .policy-box::before,
 .policy-checkbox:focus + .policy-box::before {
