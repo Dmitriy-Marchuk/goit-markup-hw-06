@@ -69,31 +69,32 @@
                     <form class="modal-form">
                         <label class="form-input-box">
                             Имя
-                            <input type="text" class="form-input">
+                            <input type="text" class="form-input" required>
                             <svg class="modal-form-icon">
                                 <use href='./images/sprite.svg#icon-person'></use>
                             </svg>
                         </label>
                         <label class="form-input-box">
                             Телефон
-                            <input type="tel" class="form-input">
+                            <input type="tel" class="form-input" pattern="[0-9]{12}" title="380xxxxxxxxx" required>
                             <svg class="modal-form-icon">
                                 <use href='./images/sprite.svg#icon-phone'></use>
                             </svg>
                         </label>
                         <label class="form-input-box">
                             Почта
-                            <input type="email" class="form-input">
+                            <input type="email" class="form-input" required>
                             <svg class="modal-form-icon">
                                 <use href='./images/sprite.svg#icon-email'></use>
                             </svg>
                         </label>
-                        <label class="form-input-box">
+                        <label class="form-input-box">  
                             Комментарий
-                            <textarea name="" id="" class="form-input comment" placeholder="Введите текст"></textarea>
+                            <textarea name="" class="form-input comment" placeholder="Введите текст" cl></textarea>
                         </label>
-                        <label class="form-accept">
-                            <input type="checkbox"> Соглашаюсь с рассылкой и принимаю <a href="#" class="chekbox-link">Условия договора</a>
+                        <input type="checkbox" class="policy-checkbox" id="policy-check" required>
+                        <label class="policy-box" for="policy-check">
+                            Соглашаюсь с рассылкой и принимаю&nbsp<a href="#">Условия договора</a>
                         </label>
                         <button type="submit" class="button-submit">Отправить</button>
                     </form>
