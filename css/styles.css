@@ -400,11 +400,14 @@ ul {
 
 .policy-checkbox:checked + .policy-box::before {
   background-color: var(--accent-text-color);
-  border: var(--accent-text-color);
   background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+.policy-checkbox:hover + .policy-box::before,
+.policy-checkbox:focus + .policy-box::before {
+  border: 2px solid var(--accent-text-color);
 }
 
 .policy-box::before {
@@ -416,6 +419,7 @@ ul {
   border-radius: 2px;
   margin-right: 7px;
   margin-left: 13px;
+  transition: 250ms var(--animation-cubic);
 }
 
 .button-submit {
